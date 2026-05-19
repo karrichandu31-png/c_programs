@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,s;
+	printf("enter two numbers: ");
+	scanf("%d%d",&a,&b);
+	printf("choose 1-addition\n 2-subtraction\n 3-multipilvcation\n 4- division ");
+        printf("enter your choce ");
+	scanf("%d",&s);
+	switch(s)
+	{
+		case 1:
+			printf("%d",a+b);
+			 break;
+		case 2:
+			 if (a>b)
+				 printf("%d",a-b);
+			 else
+				 printf("%d",b-a);
+			 break;
+		case 3:
+			 printf("%d",a*b);
+			 break;
+		case 4:
+			 printf("%d",a%b);
+			 break;
+	}
+}
